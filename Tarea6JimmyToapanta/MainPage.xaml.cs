@@ -4,10 +4,14 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using Tarea6JimmyToapanta.ws;
+using Xamarin.Essentials;
 using Xamarin.Forms;
+
 
 namespace Tarea6JimmyToapanta
 {
@@ -21,6 +25,7 @@ namespace Tarea6JimmyToapanta
         public MainPage()
         {
             InitializeComponent();
+        
         }
 
         private async void btnGet_Clicked(object sender, EventArgs e)
@@ -30,6 +35,17 @@ namespace Tarea6JimmyToapanta
             _post = new ObservableCollection<Tarea6JimmyToapanta.ws.Datos>(posts);
 
             MyListView.ItemsSource = _post;
+        }
+
+        private async void btnIngresar_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new VentanaIngreso());
+
+        }
+
+        private  void btnEliminar_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Atencion", "Elemento eliminado", "Cerrar");
         }
     }
 }

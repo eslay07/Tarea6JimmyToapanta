@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Tarea6JimmyToapanta.VentanaIngreso" 
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Ventana de Registro" FontSize="Title" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Ingrese el codigo" FontSize="Medium" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtcodigo" Placeholder="Codigo" Keyboard="Numeric" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="Ingrese el Nombre" FontSize="Medium" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtnombre" Placeholder="Nombre" Grid.Row="1" Grid.Column="1"/>
+                <Label Text="Ingrese el Apellido" FontSize="Medium" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtapellido" Placeholder="Apellido" Grid.Row="2" Grid.Column="1"/>
+                <Label Text="Ingrese su edad" FontSize="Medium" Grid.Row="3" Grid.Column="0"/>
+                <Entry x:Name="txtedad" Placeholder="Edad" Grid.Row="3" Grid.Column="1"/>
+                <Label Text="Ingrese su cedula" FontSize="Medium" Grid.Row="4" Grid.Column="0"/>
+                <Entry x:Name="txtcedula" Placeholder="Cedula" Grid.Row="4" Grid.Column="1"/>
+                <Label Text="Ingrese su #licencia" FontSize="Medium" Grid.Row="5" Grid.Column="0"/>
+                <Entry x:Name="txtlicencia" Placeholder="Licencia" Grid.Row="5" Grid.Column="1"/>
+                <Label Text="Ingrese su Tip.Sangre" FontSize="Medium" Grid.Row="6" Grid.Column="0"/>
+                <Entry x:Name="txtTSangre" Placeholder="Tip. Sangre" Grid.Row="6" Grid.Column="1"/>
+
+
+                <Button x:Name="btnInsertar" Text="Insertar" Clicked="btnInsertar_Clicked" Grid.Row="7" Grid.Column="0"/>
+                <Button x:Name="btnRegresar" Text="Regresar" Clicked="btnRegresar_Clicked"  Grid.Row="7" Grid.Column="1"/>
+
+            </Grid>
+            
+            
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

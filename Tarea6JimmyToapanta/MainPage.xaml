@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+﻿            <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Tarea6JimmyToapanta.MainPage">
 
@@ -19,7 +18,7 @@
                             </Label>
                             <Label x:Name="lblapellido" Text="{Binding apellido}">
                             </Label>
-                            <Label x:Name="lbledad" Text="{Binding edad}">
+                            <Label x:Name="lbledad" Text="{Binding edad}"> 
                             </Label>
                         </StackLayout>
                     </ViewCell>
@@ -27,7 +26,12 @@
                 
             </ListView.ItemTemplate>
             
-            
+
         </ListView>
+        <Button Text="Ingresar Datos" x:Name="btnIngresar" Clicked="btnIngresar_Clicked">
+        </Button>
+        <Button Text="Eliminar" x:Name="btnEliminar" Clicked="btnEliminar_Clicked">
+        </Button>
+        
     </StackLayout>
 </ContentPage>
